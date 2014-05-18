@@ -1,0 +1,85 @@
+
+<style>
+header {
+	text-align: center;
+	background: url(http://farm6.staticflickr.com/5530/14021187637_57254d1c88_b.jpg);
+	background-size: cover;
+	font-family:'Special Elite', cursive;
+	font-size: 22px;
+	position: absolute;
+}
+
+h1 {
+	margin-left: 280px;
+}
+
+ul {
+	padding: 10px;
+	background: rgba(0,0,0,.1);
+}
+
+li {
+	display: inline;
+	padding: 0px 180px 0px 140px;
+	color: white;
+}
+
+a {
+	color:white;
+}
+
+div {
+	height: 200px;
+	width:300px;
+	position: center;
+	margin: 0 auto;
+}
+
+.centerphoto {
+	position:center;
+	float:center;
+	background-size: cover;
+	border: 5px solid white;
+	border-radius: 145px;
+	margin: 0 auto;
+	background-image:url(http://farm6.staticflickr.com/5587/14028188490_8b1c378ddd_b.jpg);
+
+}
+
+span {
+	height:200px;
+	width:300px;
+	opacity: .8;
+	background-size: cover;
+	border: 3px solid white;
+	color:black;
+
+}
+
+.topRight {
+	position: center;
+	float: right;
+	background-image:url(http://farm6.staticflickr.com/5490/14021350467_8017db7096_b.jpg);
+}
+
+.bottomLeft {
+	position: center;
+	float:left;
+	background-image: url(http://farm6.staticflickr.com/5234/14207849164_a485bd1f65_b.jpg);
+
+}
+
+.bottomRight {
+	position:center;
+	float:right;
+	background-image: url(http://farm3.staticflickr.com/2910/14021361947_9dac24a9b3_b.jpg); 
+}
+
+article {
+	max-height:400;
+	max-width:600;
+	margin: 0 auto;
+	border: 5px solid black;
+}
+
+</style>

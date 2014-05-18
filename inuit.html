@@ -81,14 +81,35 @@ span {
 	background-image: url(http://farm3.staticflickr.com/2910/14021361947_9dac24a9b3_b.jpg); 
 }
 
-article {
-	max-height:400;
-	max-width:600;
-	margin: 0 auto;
-	border: 5px solid black;
+.carousel {
+	position:relative;
+}
+.carousel img {
+	position:absolute;
 }
 
 </style>
+<script>
+$(function(){
+    $('.carousel img:gt(0)').hide();
+    setInterval(function(){
+      $('.carousel :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.carousel');}, 
+      3000);
+});
+
+if (typeof jQuery != 'undefined') {
+ 
+    alert("jQuery library is loaded!");
+ 
+}else{
+ 
+    alert("jQuery library is not found!");
+ 
+}
+</script>
+
 </head>
 
 <body>
@@ -107,22 +128,14 @@ article {
 		<div></div>
 	<h2>Peruse Photos both ancient and timely!</h2>
 		<div class="carousel">
-			<img src="http://farm6.staticflickr.com/5521/14228113393_72924052f4_b.jpg" width="110" height="90">
+			<img src="http://farm6.staticflickr.com/5521/14228113393_72924052f4_b.jpg" width="200" height="120">
+			<img src="http://farm6.staticflickr.com/5576/14021318239_23a8f68ab5_b.jpg"width="200" height="120">
+			<img src="http://farm6.staticflickr.com/5521/14228113393_72924052f4_b.jpg" width="200" height="120">
+		</div>
+
+
+
 	</header>
-
-	<article>
-		<h3>Coupla' shots</h3>
-		<img src="http://farm6.staticflickr.com/5521/14228113393_72924052f4_b.jpg" width="110" height="90">
-	</article>
-	<article>
-		<img src="http://farm6.staticflickr.com/5521/14228113393_72924052f4_b.jpg" width="110" height="90">
-	</article>
-	<article>
-		<img src="http://farm6.staticflickr.com/5576/14021318239_23a8f68ab5_b.jpg"width="110" height="90">
-	</article>
-
-
-	
 </body>
 
 
