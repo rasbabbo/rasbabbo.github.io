@@ -30,10 +30,14 @@ li {
 	color: white;
 }
 
-img {
+.centerphoto {
+	position:center;
+	float:center;
+	background-size: cover;
 	border: 5px solid white;
-	border-radius: 145px;
-	margin-left: 280px;
+	border-radis: 145px;
+	margin: 0 auto;
+	background-image:url(http://farm6.staticflickr.com/5587/14028188490_8b1c378ddd_b.jpg);
 
 }
 
@@ -66,6 +70,24 @@ span {
 	background-image: url(http://farm3.staticflickr.com/2910/14021361947_9dac24a9b3_b.jpg); 
 }
 
+div {
+	height: 200px;
+	width:300px;
+	position: center;
+}
+
+.fadein {
+	position: relative;
+	width:50px;
+	height:30px;
+}
+
+.fadein img {
+	position:absolute;
+	left:0;
+	top:0;
+}
+
 </style>
 
 </head>
@@ -74,16 +96,34 @@ span {
 <body>
 	<header>
 		<ul>
-			<li> Bio </li>
-			<li> Music</li>
-			<li>Interests</li>
+			<li><a href="#"> Bio </a></li>
+			<li><a href="#"> Music</a></li>
+			<li><a href="#">Interests</a></li>
 		</ul>
 		<span class="topRight">Acting</span>
 		<h1>My Name is Matt</h1>
-	<img src= "http://farm6.staticflickr.com/5034/14184645006_65e6485843_b.jpg">
+	<div class = "centerphoto"></div>
 	<h2>feel free to browse</h2>
 		<span class="bottomLeft">Shooting</span>
 		<span class="bottomRight">Chillin'</span>
+	<h2>Peruse Photos both ancient and timely!</h2>
+		<div new class = "fadein">
+			<img src="http://farm3.staticflickr.com/2910/14021361947_9dac24a9b3_b.jpg">
+			<img src="http://farm6.staticflickr.com/5521/14228113393_72924052f4_b.jpg">
+			<img src="http://farm6.staticflickr.com/5576/14021318239_23a8f68ab5_b.jpg">
+		</div>
+<script>
+//Big thanks to Snook
+$(function(){
+    $('.bottomRight img:gt(0)').hide();
+    setInterval(function(){
+      $('.bottomRight :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.bottomRight');}, 
+      3000);
+});
+</script>
+
 	</header>
 	
 </body>
