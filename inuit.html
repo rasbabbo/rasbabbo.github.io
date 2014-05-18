@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="/assets/jquery.js"></script>
+	<script src="jquery.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'> 
 
 
 <style>
-body {
+header {
 	text-align: center;
 	background: url(http://farm6.staticflickr.com/5530/14021187637_57254d1c88_b.jpg);
 	background-size: cover;
@@ -63,10 +63,7 @@ span {
 .bottomRight {
 	position:center;
 	float:right;
-}
-
-.bottomRight img{
-	position:absolute;
+	background-image: url(http://farm3.staticflickr.com/2910/14021361947_9dac24a9b3_b.jpg); 
 }
 
 </style>
@@ -86,22 +83,7 @@ span {
 	<img src= "http://farm6.staticflickr.com/5034/14184645006_65e6485843_b.jpg">
 	<h2>feel free to browse</h2>
 		<span class="bottomLeft">Shooting</span>
-		<span class="bottomRight">
-				<img src="http://farm3.staticflickr.com/2910/14021361947_9dac24a9b3_b.jpg">
-				<img src="http://farm6.staticflickr.com/5521/14228113393_72924052f4_b.jpg">
-				<img src="http://farm6.staticflickr.com/5576/14021318239_23a8f68ab5_b.jpg">
-			</span>
-<script>
-//Big thanks to Snook
-$(function(){
-    $('.bottomRight img:gt(0)').hide();
-    setInterval(function(){
-      $('.bottomRight :first-child').fadeOut()
-         .next('img').fadeIn()
-         .end().appendTo('.bottomRight');}, 
-      3000);
-});
-</script>
+		<span class="bottomRight">Chillin'</span>
 	</header>
 	
 </body>
