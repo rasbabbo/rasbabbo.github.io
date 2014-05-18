@@ -12,7 +12,11 @@ body {
 	background-size: cover;
 	font-family:'Special Elite', cursive;
 	font-size: 22px;
-	position: relative;
+	position: absolute;
+}
+
+h1 {
+	margin-left: 280px;
 }
 
 ul {
@@ -27,26 +31,30 @@ li {
 }
 
 img {
-	border: 3px solid white;
+	border: 5px solid white;
 	border-radius: 145px;
+	margin-left: 280px;
 
 }
 
-div {
+span {
 	height:200px;
-	width:200px;
+	width:300px;
 	opacity: .8;
+	background-size: cover;
+	border: 3px solid white;
 }
 
 .topright {
 	position: center;
 	float: right;
 	background-image:url(http://farm6.staticflickr.com/5490/14021350467_8017db7096_b.jpg);
-	background-size: cover;
 }
 
 .bottomleft {
-
+	position: center;
+	float:left;
+	background-image: url(http://farm6.staticflickr.com/5234/14207849164_a485bd1f65_b.jpg);
 }
 
 
@@ -62,11 +70,11 @@ div {
 			<li> Music</li>
 			<li>Interests</li>
 		</ul>
-		<div class="topright"></div>
-	<h1>My Name is Matt</h1>
+		<span class="topright"></span>
+		<h1>My Name is Matt</h1>
 	<img src= "http://farm6.staticflickr.com/5034/14184645006_65e6485843_b.jpg">
 	<h2>feel free to browse</h2>
-<p>I'm hosted with GitHub Pages.</p>
+		<span class="bottomleft"></span>
 	</header>
 </body>
 
